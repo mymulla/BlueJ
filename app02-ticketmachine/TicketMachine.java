@@ -39,7 +39,7 @@ public class TicketMachine
     
     /**
      * To be called in the constructor, so that
-     * you can choose the ticket directly from the ticket machine
+     * you can choose the ticket directly from the ticket machine.
      */
     private void createTickets()
     { 
@@ -88,6 +88,7 @@ public class TicketMachine
             // Simulate the printing of a ticket.
             System.out.println("##################");
             System.out.println("# The BlueJ Line");
+            System.out.println("# Ticket");
             System.out.println("# £" + price);
             System.out.println("##################");
             System.out.println();
@@ -116,26 +117,4 @@ public class TicketMachine
         balance = 0;
         return amountToRefund;
     }
-    
-    /**
-     * To print all tickets
-     */
-    public void printAllTickets()
-    {
-        printHeading();
-        System.out.println("The following tickets are available for purchase:");
-        ticketAylesbury.print();
-        ticketAmersham.print();
-        ticketWycombe.print();
-    }
-    
-    public void printHeading()
-    {
-            System.out.println("##################");
-            System.out.println("# The BlueJ Line");
-            System.out.println("##################");
-            System.out.println();
-    }
-    
-    
 }
