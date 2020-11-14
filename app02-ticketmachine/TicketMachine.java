@@ -1,3 +1,4 @@
+;
 /**
  * TicketMachine models a ticket machine that issues
  * flat-fare tickets.
@@ -9,7 +10,7 @@
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
  * 
- * Modified by Student Name
+ * Modified by Muhammad Mulla
  */
 public class TicketMachine
 {
@@ -20,14 +21,31 @@ public class TicketMachine
 
     private int price;
     
+    private Ticket ticketAylesbury;
+    
+    private Ticket ticketAmersham;
+    
+    private Ticket ticketWycombe;
+    
     /**
      * Create a machine that issues tickets of the given price.
      */
-    public TicketMachine(int cost)
+    public TicketMachine()
     {
         balance = 0;
         total = 0;
-        this.price = cost;
+        createTickets();
+    }
+    
+    /**
+     * To be called in the constructor, so that
+     * you can choose the ticket directly from the ticket machine.
+     */
+    private void createTickets()
+    { 
+        ticketAylesbury = new Ticket("Aylesbury", 220);
+        ticketAmersham = new Ticket("Amersham", 300);
+        ticketWycombe = new Ticket("Wycombe", 330);
     }
 
 
@@ -83,7 +101,7 @@ public class TicketMachine
         else 
         {
             System.out.println("You must insert at least: " +
-                               (price - balance) + " more cents.");
+                               (price - balance) + " more pence.");
                     
         }
     }
