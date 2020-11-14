@@ -1,0 +1,21 @@
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+ticket1.getDestination()
+    returned String "Aylesbury"
+ticket1.print();
+Aylesbury, Price 220
+Ticket ticket1 = new Ticket("aaa", 560);
+ticket1.print();
+Destination:aaaPrice: 560 pence
+ticket1.print();
+Destination:aaaPrice: 560 pence
+Ticket ticket1 = new Ticket("da", 444);
+ticket1.print();
+Destination:da Price: 444 pence
+Ticket ticket1 = new Ticket("sdgsd", 3434);
+ticket1.print();
+Destination:sdgsd Price: 34343434 pence
+Ticket ticket1 = new Ticket("esgjsd", 3487);
+ticket1.print();
+Destination:esgjsd Price: 3487 pence
