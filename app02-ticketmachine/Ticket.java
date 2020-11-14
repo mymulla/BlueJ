@@ -23,7 +23,7 @@ public class Ticket
     {
         this.price = price;
         this.destination = destination;
-        datePurchased = new Date();
+        this.datePurchased = new Date();
     }
           
         

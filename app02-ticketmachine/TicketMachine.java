@@ -1,4 +1,3 @@
-;
 /**
  * TicketMachine models a ticket machine that issues
  * flat-fare tickets.
@@ -20,13 +19,13 @@ public class TicketMachine
     private int total;
 
     private int price;
-    
+
     private Ticket ticketAylesbury;
-    
+
     private Ticket ticketAmersham;
-    
+
     private Ticket ticketWycombe;
-    
+
     /**
      * Create a machine that issues tickets of the given price.
      */
@@ -36,7 +35,7 @@ public class TicketMachine
         total = 0;
         createTickets();
     }
-    
+
     /**
      * To be called in the constructor, so that
      * you can choose the ticket directly from the ticket machine
@@ -48,14 +47,13 @@ public class TicketMachine
         ticketWycombe = new Ticket("Wycombe", 330);
     }
 
-
     /**
      * Return The amount of money already inserted for the
      * next ticket.
      */
-    public int getBalance()
+    public void printBalance()
     {
-        return balance;
+        System.out.println(balance);
     }
 
     /**
@@ -71,10 +69,10 @@ public class TicketMachine
         else 
         {
             System.out.println("Use a positive amount rather than: " +
-                               amount);
+                amount);
         }
     }
-    
+
     /**
      * Print a ticket if enough money has been inserted, and
      * reduce the current balance by the ticket price. Print
@@ -82,7 +80,7 @@ public class TicketMachine
      */
     public void printTicket()
     {
-        
+
         if(balance >= price) 
         {
             // Simulate the printing of a ticket.
@@ -100,8 +98,8 @@ public class TicketMachine
         else 
         {
             System.out.println("You must insert at least: " +
-                               (price - balance) + " more pence.");
-                    
+                (price - balance) + " more pence.");
+
         }
     }
 
@@ -116,7 +114,7 @@ public class TicketMachine
         balance = 0;
         return amountToRefund;
     }
-    
+
     /**
      * To print all tickets
      */
@@ -128,14 +126,13 @@ public class TicketMachine
         ticketAmersham.print();
         ticketWycombe.print();
     }
-    
+
     public void printHeading()
     {
-            System.out.println("##################");
-            System.out.println("# The BlueJ Line");
-            System.out.println("##################");
-            System.out.println();
+        System.out.println("##################");
+        System.out.println("# The BlueJ Line");
+        System.out.println("##################");
+        System.out.println();
     }
-    
-    
+
 }
