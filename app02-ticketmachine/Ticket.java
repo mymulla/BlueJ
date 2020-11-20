@@ -7,7 +7,7 @@ import java.util.Date;
  * @author (Muhammad Mulla)
  * @version (a version number or a date)
  */
-public class Ticket
+public class Ticket extends Coin
 {
     private String destination;
     

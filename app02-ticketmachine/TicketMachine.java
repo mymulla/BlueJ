@@ -13,18 +13,19 @@
  */
 public class TicketMachine
 {
+    public static final Ticket ticketAylesbury = new Ticket("Aylesbury", 220);
+
+    public static final Ticket ticketAmersham = new Ticket("Amersham", 300);
+
+    public static final Ticket ticketWycombe = new Ticket("Wycombe", 330);
+    
+    private Ticket currentTicket;
     // The amount of money entered by a customer so far.
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
 
     private int price;
-
-    private Ticket ticketAylesbury;
-
-    private Ticket ticketAmersham;
-
-    private Ticket ticketWycombe;
 
     /**
      * Create a machine that issues tickets of the given price.
@@ -33,19 +34,24 @@ public class TicketMachine
     {
         balance = 0;
         total = 0;
-        createTickets();
+        currentTicket=null;
     }
+    
+    public void selectAylesburyTicket()
+        {
+            currentTicket=ticketAylesbury;
+        }
+    
+    public void selectAmershamTicket()
+        {
+            currentTicket=ticketAmersham;
+        }
+        
+    public void selectHighWycombeTicket()
+        {
+            currentTicket=ticketWycombe;
+        }
 
-    /**
-     * To be called in the constructor, so that
-     * you can choose the ticket directly from the ticket machine
-     */
-    private void createTickets()
-    { 
-        ticketAylesbury = new Ticket("Aylesbury", 220);
-        ticketAmersham = new Ticket("Amersham", 300);
-        ticketWycombe = new Ticket("Wycombe", 330);
-    }
 
     /**
      * Return The amount of money already inserted for the
@@ -85,7 +91,7 @@ public class TicketMachine
         {
             // Simulate the printing of a ticket.
             System.out.println("##################");
-            System.out.println("# The BlueJ Line");
+            System.out.println("# .currentTicket");
             System.out.println("# £" + price);
             System.out.println("##################");
             System.out.println();
