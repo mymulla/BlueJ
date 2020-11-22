@@ -4,31 +4,32 @@ import java.util.Date;
 /**
  * Write a description of class Ticket here.
  *
- * @author (Muhammad Mulla)
- * @version (a version number or a date)
+ * @author Muhammad Mulla
+ * @version 22/11/2020
  */
-public class Ticket extends Coin
+public class Ticket
 {
+    // The destination of the selected ticket
     private String destination;
     
-    // This is in pence
+    // This is the price of the ticket in pence
     private int price;
     
-    private Date datePurchased;
+    // The date of when the ticket was purchased
+    private Date today = new Date();
     
     /**
-     * The constructor for creating a ticket (object)
+     * The constructor for creating a ticket
      */
     public Ticket(String destination, int price)
     {
         this.price = price;
         this.destination = destination;
-        this.datePurchased = new Date();
+        this.today = new Date();
     }
-          
-        
+ 
     /**
-     * The constructor for getting a price
+     * Getting the price of the ticket in pence
      */
     public int getPrice()
     {
@@ -36,7 +37,7 @@ public class Ticket extends Coin
     }
     
     /**
-     * The constructor for getting a destination
+     * Getting the destination of the ticket
      */
     public String getDestination()
     {
@@ -44,13 +45,16 @@ public class Ticket extends Coin
     }
     
     /**
-     * The constructor for getting a date
+     * Getting the date and time for when the ticket is being purchased
      */
-    public Date getDatePurchased()
+    public Date getDate()
     {
-        return datePurchased;
+        return today;
     }
     
+    /**
+     * Printing the destination and price for a ticket
+     */
     public void print()
     {
         System.out.print("Destination:" + destination);
