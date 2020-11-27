@@ -1,17 +1,78 @@
-TicketMachine MyTicketMachine = new TicketMachine();
-MyTicketMachine.insert10Pence();
-10 pence inserted
-Current Balance: 10 pence
-MyTicketMachine.insert20Pence();
-20 pence inserted
-Current Balance: 30 pence
-MyTicketMachine.insert1Pound();
-100 pence inserted
-Current Balance: 130 pence
-MyTicketMachine.insert2Pound();
+TicketMachine ticketMa2 = new TicketMachine();
+ticketMa2.selectAylesburyTicket();
+You have selected the ticket to Aylesbury
+ticketMa2.insertCoin(Coin.P200);
 200 pence inserted
+Current Balance: 200 pence
+ticketMa2.insertCoin(Coin.P100);
+100 pence inserted
+Current Balance: 300 pence
+ticketMa2.printTicket();
+
+##################
+# Express Trains
+##################
+
+Ticket to: Aylesbury
+### Cost: 220 pence ###
+### Purchased on Fri Nov 27 13:18:40 GMT 2020 ###
+
+### Thank you for your purchase ###
+ticketMa2.refundBalance()
+    returned int 80
+ticketMa2.printBalance();
+0 pence
+ticketMa2.insertCoin(Coin.P200);
+200 pence inserted
+Current Balance: 200 pence
+ticketMa2.insertCoin(Coin.P100);
+100 pence inserted
+Current Balance: 300 pence
+ticketMa2.selectAmershamTicket();
+You have selected the ticket to Amersham
+ticketMa2.printTicket();
+
+##################
+# Express Trains
+##################
+
+Ticket to: Amersham
+### Cost: 300 pence ###
+### Purchased on Fri Nov 27 13:18:40 GMT 2020 ###
+
+### Thank you for your purchase ###
+ticketMa2.selectHighWycombeTicket();
+You have selected the ticket to High Wycombe
+ticketMa2.insertCoin(Coin.P200);
+200 pence inserted
+Current Balance: 200 pence
+ticketMa2.insertCoin(Coin.P100);
+100 pence inserted
+Current Balance: 300 pence
+ticketMa2.printTicket();
+
+You must insert at least: 30 more pence.
+ticketMa2.printTicket();
+
+You must insert at least: 30 more pence.
+ticketMa2.insertCoin(Coin.P20);
+20 pence inserted
+Current Balance: 320 pence
+ticketMa2.insertCoin(Coin.P10);
+10 pence inserted
 Current Balance: 330 pence
-MyTicketMachine.printAvailableDestinations();
+ticketMa2.printTicket();
+
+##################
+# Express Trains
+##################
+
+Ticket to: HighWycombe
+### Cost: 330 pence ###
+### Purchased on Fri Nov 27 13:18:40 GMT 2020 ###
+
+### Thank you for your purchase ###
+ticketMa2.printAvailableDestinations();
 ##################
 # Express Trains
 ##################
@@ -20,72 +81,6 @@ The following tickets are available for purchase:
 
 Destination:Aylesbury Price: 220 pence
 Destination:Amersham Price: 300 pence
-Destination:Wycombe Price: 330 pence
-MyTicketMachine.printBalance();
-330 pence
-MyTicketMachine.selectAylesburyTicket();
-You have selected the ticket to Aylesbury
-MyTicketMachine.printTicket();
-
-##################
-# Express Trains
-##################
-
-Ticket to: Aylesbury
-### Cost: 220 pence ###
-### Purchased on Sun Nov 22 21:18:20 GMT 2020 ###
-
-### Thank you for your purchase ###
-MyTicketMachine.printBalance();
-110 pence
-MyTicketMachine.refundBalance()
-    returned int 110
-MyTicketMachine.insert2Pound();
-200 pence inserted
-Current Balance: 200 pence
-MyTicketMachine.insert1Pound();
-100 pence inserted
-Current Balance: 300 pence
-MyTicketMachine.selectAmershamTicket();
-You have selected the ticket to Amersham
-MyTicketMachine.printTicket();
-
-##################
-# Express Trains
-##################
-
-Ticket to: Amersham
-### Cost: 300 pence ###
-### Purchased on Sun Nov 22 21:18:20 GMT 2020 ###
-
-### Thank you for your purchase ###
-MyTicketMachine.printBalance();
+Destination:HighWycombe Price: 330 pence
+ticketMa2.printBalance();
 0 pence
-MyTicketMachine.insert2Pound();
-200 pence inserted
-Current Balance: 200 pence
-MyTicketMachine.insert1Pound();
-100 pence inserted
-Current Balance: 300 pence
-MyTicketMachine.selectHighWycombeTicket();
-You have selected the ticket to High Wycombe
-MyTicketMachine.printTicket();
-
-You must insert at least: 30 more pence.
-MyTicketMachine.insert20Pence();
-20 pence inserted
-Current Balance: 320 pence
-MyTicketMachine.insert10Pence();
-10 pence inserted
-Current Balance: 330 pence
-MyTicketMachine.printTicket();
-
-##################
-# Express Trains
-##################
-
-Ticket to: Wycombe
-### Cost: 330 pence ###
-### Purchased on Sun Nov 22 21:18:20 GMT 2020 ###
-
-### Thank you for your purchase ###

@@ -1,0 +1,53 @@
+TicketMachine ticketMa1 = new TicketMachine();
+ticketMa1.insertCoin(Coin.P10);
+10 pence inserted
+Current Balance: 10 pence
+ticketMa1.insertCoin(Coin.P20);
+20 pence inserted
+Current Balance: 30 pence
+ticketMa1.insertCoin(Coin.P100);
+100 pence inserted
+Current Balance: 130 pence
+ticketMa1.insertCoin(Coin.P200);
+200 pence inserted
+Current Balance: 330 pence
+ticketMa1.selectAmershamTicket();
+You have selected the ticket to Amersham
+ticketMa1.selectAylesburyTicket();
+You have selected the ticket to Aylesbury
+ticketMa1.selectHighWycombeTicket();
+You have selected the ticket to High Wycombe
+ticketMa1.printBalance();
+330 pence
+ticketMa1.refundBalance()
+    returned int 330
+ticketMa1.insertCoin(Coin.P200);
+200 pence inserted
+Current Balance: 200 pence
+ticketMa1.printTicket();
+
+You must insert at least: 130 more pence.
+ticketMa1.insertCoin(Coin.P200);
+200 pence inserted
+Current Balance: 400 pence
+ticketMa1.printTicket();
+
+##################
+# Express Trains
+##################
+
+Ticket to: HighWycombe
+### Cost: 330 pence ###
+### Purchased on Fri Nov 27 13:18:40 GMT 2020 ###
+
+### Thank you for your purchase ###
+ticketMa1.printAvailableDestinations();
+##################
+# Express Trains
+##################
+
+The following tickets are available for purchase:
+
+Destination:Aylesbury Price: 220 pence
+Destination:Amersham Price: 300 pence
+Destination:HighWycombe Price: 330 pence

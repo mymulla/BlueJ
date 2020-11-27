@@ -2,10 +2,10 @@
 import java.util.Date;
 
 /**
- * Write a description of class Ticket here.
+ * This class models a ticket with a destination, price and a date
  *
  * @author Muhammad Mulla
- * @version 22/11/2020
+ * @version 27/11/2020
  */
 public class Ticket
 {
@@ -29,19 +29,19 @@ public class Ticket
     }
  
     /**
-     * Getting the price of the ticket in pence
-     */
-    public int getPrice()
-    {
-        return price;
-    }
-    
-    /**
      * Getting the destination of the ticket
      */
     public String getDestination()
     {
         return destination;
+    }
+    
+    /**
+     * Getting the price of the ticket in pence
+     */
+    public int getPrice()
+    {
+        return price;
     }
     
     /**

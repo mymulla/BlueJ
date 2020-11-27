@@ -1,19 +1,24 @@
-import java.io.*;
 import java.util.Date;
 
 /**
- * TicketMachine models a ticket machine that issues
- * flat-fare tickets.
- * The price of a ticket is specified via the constructor.
- * Instances will check to ensure that a user only enters
- * sensible amounts of money, and will only print a ticket
- * if enough money has been input.
+ * This class, TicketMachine, models a ticket machine
+ * from which customers can purchase three different tickets.
+ * They can purchase:
+ * - Ticket to Aylesbury- £2.20
+ * - Ticket to Amersham- £3.00
+ * - Ticket to High Wycombe- £3.30
+ * 
+ * All prices are in pence
+ * 
+ * The ticket prices are defined in the field as constants (static final)
+ * 
+ * If a sensible amount (10, 20, 100, or 200 pence) is not inserted, then an error message will be displayed.
  * 
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
  * 
  * Modified by Muhammad Mulla
- * 22/11/2020
+ * 27/11/2020
  */
 public class TicketMachine
 {
@@ -22,7 +27,7 @@ public class TicketMachine
 
     public static final Ticket ticketAmersham = new Ticket("Amersham", 300);
 
-    public static final Ticket ticketWycombe = new Ticket("Wycombe", 330);
+    public static final Ticket ticketWycombe = new Ticket("HighWycombe", 330);
 
     //The ticket which is currently selected
     private Ticket currentTicket;
@@ -40,6 +45,7 @@ public class TicketMachine
     {
         balance = 0;
         total = 0;
+        //The currentTicket has a null value as initally, no ticket has been selected
         currentTicket = null;
     }
 
@@ -74,7 +80,7 @@ public class TicketMachine
     }
 
     /**
-     * The heading to be called in the printTicket method
+     * The heading to be called in the printAvailableDestinations and printTicket methods
      */
     private void printHeading()
     {
@@ -141,9 +147,10 @@ public class TicketMachine
     }
 
     /**
-     * This method accepts a simple integer, only accepting 
+     * This enumeration method accepts a simple integer, only accepting 
      * 10, 20, 100 and 200 (pence)
-     * Prints an error message if other than these values are inserted
+     * 
+     * An error message is printed if other than these values are inserted
      */
     public void insertCoin(int value)
     {
@@ -157,57 +164,6 @@ public class TicketMachine
             default: 
             System.out.println();
             System.out.println("This " + value + " is not an acceptable coin!");
-        }
-    }
-
-    /**
-     * Insert a ten pence coin
-     */
-    public void insert10Pence()
-    {
-        updateBalance(10);            
-    }
-
-    /**
-     * Insert a twenty pence coin
-     */
-    public void insert20Pence()
-    {
-        updateBalance(20);            
-    }
-
-    /**
-     * Insert a one pound coin
-     */
-    public void insert1Pound()
-    {
-        updateBalance(100);            
-    }
-
-    /**
-     * Insert a two pound coin
-     */
-    public void insert2Pound()
-    {
-        updateBalance(200);
-    }
-
-    /**
-     * Receive an amount of money from a customer.
-     * Check that the amount is sensible.
-     */
-    public void insertMoney(int amount)
-    {
-        if(amount > 0) 
-        {
-            balance = balance + amount;
-            System.out.println(amount + " pence has been inserted");
-            printBalance();
-        }
-        else 
-        {
-            System.out.println("Use a positive amount rather than: " +
-                amount);
         }
     }
 
