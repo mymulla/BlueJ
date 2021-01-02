@@ -2,10 +2,12 @@ import java.util.*;
 
 /**
  * The Student class represents a student in a student administration system.
- * It holds the student details relevant in our context.
+ * It holds the student details relevant in our context, which are
+ * The name, ID, the course they are enrolled on (and its modules),
+ * and the credits earned by completing the modules.
  * 
- * @author Michael Kölling and David Barnes
- * @version 2016.02.29
+ * @author Muhammad Mulla
+ * @version Jan 2021
  */
 public class Student
 {
@@ -15,9 +17,9 @@ public class Student
     private String id;
     // the amount of credits for study taken so far
     private int credits;
-    
+
     private Course course;
-    
+
     /**
      * Create a new student with a given name and ID number.
      */
@@ -28,44 +30,20 @@ public class Student
         credits = 0;
     }
 
-    /**
-     * Return the full name of this student.
-     */
-    public String getName()
-    {
-        return name;
-    }
-
-    /**
-     * Set a new name for this student.
-     */
-    public void changeName(String replacementName)
-    {
-        name = replacementName;
-    }
-
-    /**
-     * Return the student ID of this student.
-     */
-    public String getStudentID()
-    {
-        return id;
-    }
-    
     public void enrolonCourse(Course course)
     {
         this.course = course;
     }
 
     /**
-     * Add some credit points to the student's accumulated credits.
+     * Add 25 credit points to the student's accumulated credits.
      */
-    public void addCredits(int additionalPoints)
+    public void addCredits()
     {
-        credits += additionalPoints;
+        credits += 25;
+        System.out.println ("25 Credits have been added"); 
     }
 
-    
     /**
      * Return the number of credit points this student has accumulated.
      */
@@ -74,16 +52,6 @@ public class Student
         return credits;
     }
 
-    /**
-     * Return the login name of this student. The login name is a combination
-     * of the first four characters of the student's name and the first three
-     * characters of the student's ID number.
-     */
-    public String getLoginName()
-    {
-        return name.substring(0,4) + id.substring(0,3);
-    }
-    
     /**
      * Print the student's name and ID number to the output terminal.
      */
