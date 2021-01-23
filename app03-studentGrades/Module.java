@@ -1,4 +1,3 @@
-
 /**
  * This class, Module, models a module of a course, which
  * will have a Title, a Module Code, and a mark (%).
@@ -12,7 +11,7 @@ public class Module
 
     private String moduleCode;
 
-    private static int markoutof100;
+    public static int markoutof100;
 
     public static boolean moduleisComplete;
 
@@ -49,7 +48,7 @@ public class Module
         {
             this.markoutof100 = markoutof100;
             System.out.println(markoutof100 + 
-                " % has been awarded for this module");
+                " % has been awarded for " + title);
             moduleisComplete = true;
         }
         else
@@ -62,7 +61,7 @@ public class Module
     {
         return markoutof100;
     }
-    
+
     public static boolean moduleComplete()
     {
         return moduleisComplete;

@@ -19,7 +19,6 @@ public class Student
     private int credits;
 
     private Course course;
-
     /**
      * Create a new student with a given name and ID number.
      */
@@ -33,6 +32,8 @@ public class Student
     public void enrolonCourse(Course course)
     {
         this.course = course;
+
+        System.out.println(name + " is now enrolled on the course");
     }
 
     /**

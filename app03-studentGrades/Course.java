@@ -6,7 +6,7 @@
  */
 public class Course
 {
-    private String title;
+    public String title;
     private String codeNo;
 
     //Creating the Modules
@@ -15,11 +15,10 @@ public class Course
     private Module module03;
     private Module module04;
 
+    private boolean complete;
+
     private int totalMarks;
-    private int meanCourseMark;
     private int numberofModules;
-    
-    public static final int maxModules = 4;
 
     /**
      * Constructor for objects of class Course
@@ -28,6 +27,10 @@ public class Course
     {
         this.title = title;
         this.codeNo = codeNo;
+
+        totalMarks = module01.markoutof100 + module02.markoutof100 +
+        module03.markoutof100 + module04.markoutof100;
+        complete = false;
     }
 
     /**
@@ -80,7 +83,13 @@ public class Course
             totalMarks = totalMarks + Module.getMark();
         }
     }
-
+    
+    private void completeCourse()
+    {
+        if ((numberofModules == 4) && (totalMarks >=4))
+        complete = true;
+    }
+    
     public void printModules()
     {
         if(module01 != null) module01.print();
@@ -92,38 +101,45 @@ public class Course
         if(module04 != null) module04.print();
     }
 
-    public void calculateCourseGrade()
+    public void printCourseDetails()
     {
-        meanCourseMark = totalMarks / maxModules;
-        
-        if (numberofModules == maxModules)
-        {
-        if(meanCourseMark <= 39)
-        {
-            System.out.println("Grade F");
-        }
+        System.out.println("Course title: " + title);
+        System.out.println("Course code: " + codeNo);
+        System.out.println("Number of Modules: " + numberofModules);
+    }
 
-        else if(meanCourseMark <=49)
+    public void calculateCourseGrade()
+    {   
+        int meanCourseMark = totalMarks / 4;
+        System.out.println("Average Mark: " + meanCourseMark + " %");
+        if (numberofModules == 4)
         {
-            System.out.println("Grade D"); 
-        }
+            if(meanCourseMark <= 39)
+            {
+                System.out.println("Grade F");
+            }
 
-        else if(meanCourseMark <=59)
-        {
-            System.out.println("Grade C"); 
-        }
+            else if(meanCourseMark <=49)
+            {
+                System.out.println("Grade D"); 
+            }
 
-        else if(meanCourseMark <=69)
-        {
-            System.out.println("Grade B"); 
-        }
+            else if(meanCourseMark <=59)
+            {
+                System.out.println("Grade C"); 
+            }
 
-        else if(meanCourseMark <=100)
-        {
-            System.out.println("Grade A"); 
-        } 
+            else if(meanCourseMark <=69)
+            {
+                System.out.println("Grade B"); 
+            }
+
+            else if(meanCourseMark <=100)
+            {
+                System.out.println("Grade A"); 
+            } 
         }
         else
-        throw new NullPointerException("Please complete all modules first");
+            throw new NullPointerException("Please complete all modules first");
     }
 }
