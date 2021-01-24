@@ -15,12 +15,14 @@ public class Student
     private String name;
     // the student ID
     private String id;
-    // the amount of credits for study taken so far
-    private int credits;
+    // the amount of credits- earned by completing modules (25 per module above 40%)
+    public static int credits;
+    private int creditsadded;
 
     private Course course;
     /**
-     * Create a new student with a given name and ID number.
+     * Constructor for object of class Student.
+     * Creates a new student with a given name and ID number.
      */
     public Student(String fullName, String studentID)
     {
@@ -29,6 +31,9 @@ public class Student
         credits = 0;
     }
 
+    /**
+     * This method is to enroll the student on a course.
+     */
     public void enrolonCourse(Course course)
     {
         this.course = course;
@@ -37,12 +42,14 @@ public class Student
     }
 
     /**
-     * Add 25 credit points to the student's accumulated credits.
+     * This method is to add credits manually.
+     * This method is called with int 25 under the "awardModuleMarks" method
+     * in the Course class.
      */
-    public void addCredits()
+    public static void addCredits(int creditsadded)
     {
-        credits += 25;
-        System.out.println ("25 Credits have been added"); 
+        credits += creditsadded;
+        System.out.println (creditsadded + " Credits have been added"); 
     }
 
     /**
@@ -54,10 +61,18 @@ public class Student
     }
 
     /**
-     * Print the student's name and ID number to the output terminal.
+     * Print the student's name, ID number and other course details
+     * (credits, course, grade) to the output terminal.
      */
-    public void print()
+    public void printStudentCourseDetails()
     {
-        System.out.println(name + ", student ID: " + id + ", credits: " + credits);
+        System.out.println("Student Name: " + name);
+        System.out.println("Student ID: " + id);
+        System.out.println("Credits: " + credits);
+        System.out.println();
+        course.printCourseDetails();
+        System.out.println();
+        course.printCourseModules();
+        course.printCourseGrade();
     }
 }

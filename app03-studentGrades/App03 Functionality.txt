@@ -1,0 +1,40 @@
+Module module1 = new Module(1);
+Module module2 = new Module(2);
+Module module3 = new Module(3);
+Module module4 = new Module(4);
+Course course1 = new Course("Computing", "C001");
+course1.addmodule(1, module1);
+Module01 has been added to the course
+course1.addmodule(2, module2);
+Module02 has been added to the course
+course1.addmodule(3, module3);
+Module03 has been added to the course
+course1.addmodule(4, module4);
+Module04 has been added to the course
+Student student1 = new Student("John", "01");
+student1.enrolonCourse(course1);
+John is now enrolled on the course
+course1.printCourseModules();
+Module: Module01
+Code: M001
+Mark for this module: 0%
+Module: Module02
+Code: M002
+Mark for this module: 0%
+Module: Module03
+Code: M003
+Mark for this module: 0%
+Module: Module04
+Code: M004
+Mark for this module: 0%
+course1.awardModuleMarks(1, 89);
+89 % has been awarded for Module01
+course1.awardModuleMarks(2, 50);
+50 % has been awarded for Module02
+course1.awardModuleMarks(3, 90);
+90 % has been awarded for Module03
+course1.awardModuleMarks(4, 76);
+76 % has been awarded for Module04
+course1.printCourseGrade();
+Average Mark: 76 %
+Grade: A

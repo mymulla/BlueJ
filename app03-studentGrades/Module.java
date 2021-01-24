@@ -1,22 +1,24 @@
 /**
  * This class, Module, models a module of a course, which
  * will have a Title, a Module Code, and a mark (%).
+ * The module details of the four courses have been pre-configured, allowing the 
+ * creation of a module (object) with only the module number (1-4).
  *
- * @author (Muhammad Mulla)
- * @version (Jan 2020)
+ * @author Muhammad Mulla
+ * @version Jan 2021
  */
 public class Module
 {
     private String title;
-
     private String moduleCode;
 
-    public static int markoutof100;
+    public int markforthismodule;
 
-    public static boolean moduleisComplete;
+    public boolean moduleisComplete;
 
     /**
      * Constructor for objects of class Module
+     * Creates a new module with a title and code, by inputting a module number (1-4)
      */
     public Module(int moduleNumber)
     {
@@ -24,7 +26,7 @@ public class Module
         this.moduleCode = moduleCode;
 
         moduleisComplete = false;
-        markoutof100 = 0;
+        markforthismodule = 0;
         if ((moduleNumber <=4) && (moduleNumber !=0))
 
         {switch (moduleNumber)
@@ -37,19 +39,26 @@ public class Module
         }
         else
         {
+            //If a module number other than 1-4 is selected
             throw new NullPointerException("Please select a module from 1-4");
         }
-
     }
 
-    public void awardModuleMark(int markoutof100)
+    /**
+     * This method prints the awarded mark for the module object.
+     * This method is called under the "awardModuleMarks" method in the Course class.
+     */
+    public void awardMark(int markforthismodule)
     {
-        if ((markoutof100 <= 100) && (markoutof100 >=0))
+        if ((markforthismodule <= 100) && (markforthismodule >=0))
         {
-            this.markoutof100 = markoutof100;
-            System.out.println(markoutof100 + 
+            this.markforthismodule = markforthismodule;
+            System.out.println(markforthismodule + 
                 " % has been awarded for " + title);
-            moduleisComplete = true;
+            if (markforthismodule >=40)
+            {
+                moduleisComplete = true;
+            }
         }
         else
         {
@@ -57,20 +66,30 @@ public class Module
         }
     }
 
-    public static int getMark()
+    /**
+     * Getter method which returns the awarded mark
+     * This method is called under the "awardModuleMarks" method in the Course class.
+     */
+    public int getMark()
     {
-        return markoutof100;
+        return markforthismodule;
     }
 
-    public static boolean moduleComplete()
+    /**
+     * This method checks if the module has been completed (if 40% + has been awarded).
+     */
+    public boolean moduleComplete()
     {
         return moduleisComplete;
     }
 
+    /**
+     * This method prints the module title, code and % mark)
+     */
     public void print()
     {
         System.out.println("Module: " + title);
         System.out.println("Code: " + moduleCode);
-        System.out.println("Mark for this module: " + markoutof100 + "%");
+        System.out.println("Mark for this module: " + markforthismodule + "%");
     }
 }

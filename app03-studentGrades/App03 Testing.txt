@@ -1,0 +1,97 @@
+Student student1 = new Student("John", "01");
+Course course1 = new Course("Computing", "C001");
+Module module1 = new Module(1);
+Module module2 = new Module(2);
+Module module3 = new Module(3);
+Module module4 = new Module(4);
+student1.enrolonCourse(course1);
+John is now enrolled on the course
+course1.addmodule(1, module1);
+Module01 has been added to the course
+course1.addmodule(2, module2);
+Module02 has been added to the course
+course1.addmodule(3, module3);
+Module03 has been added to the course
+course1.addmodule(4, module4);
+Module04 has been added to the course
+course1.awardModuleMarks(1, 89);
+89 % has been awarded for Module01
+25 Credits have been added
+course1.awardModuleMarks(2, 50);
+50 % has been awarded for Module02
+25 Credits have been added
+course1.awardModuleMarks(3, 90);
+90 % has been awarded for Module03
+25 Credits have been added
+course1.awardModuleMarks(4, 76);
+76 % has been awarded for Module04
+25 Credits have been added
+module1.moduleComplete()
+    returned boolean true
+module2.moduleComplete()
+    returned boolean true
+module3.moduleComplete()
+    returned boolean true
+module4.moduleComplete()
+    returned boolean true
+module1.print();
+Module: Module01
+Code: M001
+Mark for this module: 89%
+module2.print();
+Module: Module02
+Code: M002
+Mark for this module: 50%
+module3.print();
+Module: Module03
+Code: M003
+Mark for this module: 90%
+module4.print();
+Module: Module04
+Code: M004
+Mark for this module: 76%
+course1.printCourseDetails();
+Course title: Computing
+Course code: C001
+Number of Modules: 4
+course1.printCourseModules();
+Module: Module01
+Code: M001
+Mark for this module: 89%
+Module: Module02
+Code: M002
+Mark for this module: 50%
+Module: Module03
+Code: M003
+Mark for this module: 90%
+Module: Module04
+Code: M004
+Mark for this module: 76%
+course1.printCourseGrade();
+Average Mark: 76 %
+Grade: A
+course1.printCourseCredits();
+Credits for this course: 100
+student1.printStudentCourseDetails();
+Student Name: John
+Student ID: 01
+Credits: 100
+
+Course title: Computing
+Course code: C001
+Number of Modules: 4
+
+Module: Module01
+Code: M001
+Mark for this module: 89%
+Module: Module02
+Code: M002
+Mark for this module: 50%
+Module: Module03
+Code: M003
+Mark for this module: 90%
+Module: Module04
+Code: M004
+Mark for this module: 76%
+Average Mark: 76 %
+Grade: A
