@@ -1,0 +1,205 @@
+StockManager manager = new StockManager();
+StockDemo stockDem1 = new StockDemo(manager);
+Product: 100: Samsung Galaxy S20, Stock level: 0 has been been added to the stock
+Product: 101: Samsung Galaxy S10, Stock level: 0 has been been added to the stock
+Product: 102: Samsung Galaxy S9, Stock level: 0 has been been added to the stock
+Product: 103: Samsung Galaxy S8, Stock level: 0 has been been added to the stock
+Product: 104: iPhone X, Stock level: 0 has been been added to the stock
+Product: 105: iPhone 9, Stock level: 0 has been been added to the stock
+Product: 106: iPhone 8, Stock level: 0 has been been added to the stock
+Product: 107: Google Pixel 4a, Stock level: 0 has been been added to the stock
+Product: 108: Google Pixel 5, Stock level: 0 has been been added to the stock
+Product: 109: OnePlus NORD 5G, Stock level: 0 has been been added to the stock
+Product product1 = new Product(110, "Huawei");
+manager.addProduct(product1);
+Product: 110: Huawei, Stock level: 0 has been been added to the stock
+manager.deliverProduct(100, 10);
+Product 100: Samsung Galaxy S20, Stock level: 0 has been found
+A delivery of Samsung Galaxy S20 has been received
+Restocked by 10
+Updated Product: 100: Samsung Galaxy S20, Stock level: 10
+manager.deliverProduct(101, 10);
+Product 101: Samsung Galaxy S10, Stock level: 0 has been found
+A delivery of Samsung Galaxy S10 has been received
+Restocked by 10
+Updated Product: 101: Samsung Galaxy S10, Stock level: 10
+manager.deliverProduct(102, 10);
+Product 102: Samsung Galaxy S9, Stock level: 0 has been found
+A delivery of Samsung Galaxy S9 has been received
+Restocked by 10
+Updated Product: 102: Samsung Galaxy S9, Stock level: 10
+manager.deliverProduct(103, 10);
+Product 103: Samsung Galaxy S8, Stock level: 0 has been found
+A delivery of Samsung Galaxy S8 has been received
+Restocked by 10
+Updated Product: 103: Samsung Galaxy S8, Stock level: 10
+manager.deliverProduct(104, 20);
+Product 104: iPhone X, Stock level: 0 has been found
+A delivery of iPhone X has been received
+Restocked by 20
+Updated Product: 104: iPhone X, Stock level: 20
+manager.deliverProduct(105, 20);
+Product 105: iPhone 9, Stock level: 0 has been found
+A delivery of iPhone 9 has been received
+Restocked by 20
+Updated Product: 105: iPhone 9, Stock level: 20
+manager.deliverProduct(106, 20);
+Product 106: iPhone 8, Stock level: 0 has been found
+A delivery of iPhone 8 has been received
+Restocked by 20
+Updated Product: 106: iPhone 8, Stock level: 20
+manager.deliverProduct(107, 25);
+Product 107: Google Pixel 4a, Stock level: 0 has been found
+A delivery of Google Pixel 4a has been received
+Restocked by 25
+Updated Product: 107: Google Pixel 4a, Stock level: 25
+manager.deliverProduct(108, 25);
+Product 108: Google Pixel 5, Stock level: 0 has been found
+A delivery of Google Pixel 5 has been received
+Restocked by 25
+Updated Product: 108: Google Pixel 5, Stock level: 25
+manager.deliverProduct(109, 25);
+Product 109: OnePlus NORD 5G, Stock level: 0 has been found
+A delivery of OnePlus NORD 5G has been received
+Restocked by 25
+Updated Product: 109: OnePlus NORD 5G, Stock level: 25
+manager.deliverProduct(110, 25);
+Product 110: Huawei, Stock level: 0 has been found
+A delivery of Huawei has been received
+Restocked by 25
+Updated Product: 110: Huawei, Stock level: 25
+manager.sellProduct(100, 6);
+Product 100: Samsung Galaxy S20, Stock level: 10 has been found
+Selling 6 of item: 100: Samsung Galaxy S20, Stock level: 10
+Updated stock level: 4
+manager.sellProduct(101, 2);
+Product 101: Samsung Galaxy S10, Stock level: 10 has been found
+Selling 2 of item: 101: Samsung Galaxy S10, Stock level: 10
+Updated stock level: 8
+manager.sellProduct(103, 4);
+Product 103: Samsung Galaxy S8, Stock level: 10 has been found
+Selling 4 of item: 103: Samsung Galaxy S8, Stock level: 10
+Updated stock level: 6
+manager.sellProduct(104, 9);
+Product 104: iPhone X, Stock level: 20 has been found
+Selling 9 of item: 104: iPhone X, Stock level: 20
+Updated stock level: 11
+manager.sellProduct(105, 18);
+Product 105: iPhone 9, Stock level: 20 has been found
+Selling 18 of item: 105: iPhone 9, Stock level: 20
+Updated stock level: 2
+manager.sellProduct(106, 17);
+Product 106: iPhone 8, Stock level: 20 has been found
+Selling 17 of item: 106: iPhone 8, Stock level: 20
+Updated stock level: 3
+manager.sellProduct(107, 2);
+Product 107: Google Pixel 4a, Stock level: 25 has been found
+Selling 2 of item: 107: Google Pixel 4a, Stock level: 25
+Updated stock level: 23
+manager.sellProduct(108, 12);
+Product 108: Google Pixel 5, Stock level: 25 has been found
+Selling 12 of item: 108: Google Pixel 5, Stock level: 25
+Updated stock level: 13
+manager.sellProduct(109, 24);
+Product 109: OnePlus NORD 5G, Stock level: 25 has been found
+Selling 24 of item: 109: OnePlus NORD 5G, Stock level: 25
+Updated stock level: 1
+manager.sellProduct(110, 22);
+Product 110: Huawei, Stock level: 25 has been found
+Selling 22 of item: 110: Huawei, Stock level: 25
+Updated stock level: 3
+manager.sellProduct(110, 5);
+Product 110: Huawei, Stock level: 3 has been found
+Insufficient quantity requested, only 3 available in stock-
+Selling 3 of item: 110: Huawei, Stock level: 3
+Updated stock level: 0
+manager.sellProduct(108, 20);
+Product 108: Google Pixel 5, Stock level: 13 has been found
+Insufficient quantity requested, only 13 available in stock-
+Selling 13 of item: 108: Google Pixel 5, Stock level: 13
+Updated stock level: 0
+manager.printAllProductDetails();
+
+M Mulla's Phone Stock List
+**************************
+
+100: Samsung Galaxy S20, Stock level: 4
+101: Samsung Galaxy S10, Stock level: 8
+102: Samsung Galaxy S9, Stock level: 10
+103: Samsung Galaxy S8, Stock level: 6
+104: iPhone X, Stock level: 11
+105: iPhone 9, Stock level: 2
+106: iPhone 8, Stock level: 3
+107: Google Pixel 4a, Stock level: 23
+108: Google Pixel 5, Stock level: 0
+109: OnePlus NORD 5G, Stock level: 1
+110: Huawei, Stock level: 0
+manager.findProduct(104)
+Product 104: iPhone X, Stock level: 11 has been found
+    returned Object <object reference>
+manager.findProduct(102)
+Product 102: Samsung Galaxy S9, Stock level: 10 has been found
+    returned Object <object reference>
+manager.findProduct(109)
+Product 109: OnePlus NORD 5G, Stock level: 1 has been found
+    returned Object <object reference>
+manager.findProduct(100)
+Product 100: Samsung Galaxy S20, Stock level: 4 has been found
+    returned Object <object reference>
+manager.findProduct(120)
+Product not found- this product does not exist
+    returned Object null
+manager.findProduct(111)
+Product not found- this product does not exist
+    returned Object null
+manager.removeProduct(110);
+Product 110: Huawei, Stock level: 0 has been found
+110: Huawei, Stock level: 0 has been removed
+Updated product list:
+
+M Mulla's Phone Stock List
+**************************
+
+100: Samsung Galaxy S20, Stock level: 4
+101: Samsung Galaxy S10, Stock level: 8
+102: Samsung Galaxy S9, Stock level: 10
+103: Samsung Galaxy S8, Stock level: 6
+104: iPhone X, Stock level: 11
+105: iPhone 9, Stock level: 2
+106: iPhone 8, Stock level: 3
+107: Google Pixel 4a, Stock level: 23
+108: Google Pixel 5, Stock level: 0
+109: OnePlus NORD 5G, Stock level: 1
+manager.renameProduct(109, "OnePlus 5G");
+Product 109: OnePlus NORD 5G, Stock level: 1 has been found
+Name of product with id 109 (OnePlus NORD 5G) has been renamed 
+to OnePlus 5G
+
+Updated product list:
+
+M Mulla's Phone Stock List
+**************************
+
+100: Samsung Galaxy S20, Stock level: 4
+101: Samsung Galaxy S10, Stock level: 8
+102: Samsung Galaxy S9, Stock level: 10
+103: Samsung Galaxy S8, Stock level: 6
+104: iPhone X, Stock level: 11
+105: iPhone 9, Stock level: 2
+106: iPhone 8, Stock level: 3
+107: Google Pixel 4a, Stock level: 23
+108: Google Pixel 5, Stock level: 0
+109: OnePlus 5G, Stock level: 1
+manager.searchForProduct("Samsung");
+100: Samsung Galaxy S20, Stock level: 4
+101: Samsung Galaxy S10, Stock level: 8
+102: Samsung Galaxy S9, Stock level: 10
+103: Samsung Galaxy S8, Stock level: 6
+The search returned 4 results containing Samsung.
+manager.printLowStockProducts();
+These are the products which are low in stock (less than 5 available):
+100: Samsung Galaxy S20, Stock level: 4
+105: iPhone 9, Stock level: 2
+106: iPhone 8, Stock level: 3
+108: Google Pixel 5, Stock level: 0
+109: OnePlus 5G, Stock level: 1

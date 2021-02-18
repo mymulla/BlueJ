@@ -4,23 +4,43 @@
  * the StockManager class is completed.
  * 
  * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * Modified by Muhammad Mulla
+ * @version Feb 2021
  */
 public class StockDemo
 {
     // The stock manager.
     private StockManager manager;
-
+    
+    public static final int StartID = 100; 
     /**
      * Create a StockManager and populate it with a few
      * sample products.
      */
-    public StockDemo()
+    public StockDemo(StockManager manager)
     {
-        manager = new StockManager();
-        manager.addProduct(new Product(132, "Clock Radio"));
-        manager.addProduct(new Product(37,  "Mobile Phone"));
-        manager.addProduct(new Product(23,  "Microwave Oven"));
+        this.manager = manager;
+        
+        int id = StartID;
+        manager.addProduct(new Product(id, "Samsung Galaxy S20"));
+        id++;
+        manager.addProduct(new Product(id,  "Samsung Galaxy S10"));
+        id++;
+        manager.addProduct(new Product(id,  "Samsung Galaxy S9"));
+        id++;
+        manager.addProduct(new Product(id,  "Samsung Galaxy S8"));
+        id++;
+        manager.addProduct(new Product(id,  "iPhone X"));
+        id++;
+        manager.addProduct(new Product(id,  "iPhone 9"));
+        id++;
+        manager.addProduct(new Product(id,  "iPhone 8"));
+        id++;
+        manager.addProduct(new Product(id,  "Google Pixel 4a"));
+        id++;
+        manager.addProduct(new Product(id,  "Google Pixel 5"));
+        id++;
+        manager.addProduct(new Product(id,  "OnePlus NORD 5G"));
     }
     
     /**
@@ -28,13 +48,14 @@ public class StockDemo
      * might be used. Details of one product are shown, the
      * product is restocked, and then the details are shown again.
      */
-    public void demo()
+    public void demorestock()
     {
         // Show details of all of the products.
-        manager.printProductDetails();
+        manager.printAllProductDetails();
         // Take delivery of 5 items of one of the products.
-        manager.delivery(132, 5);
-        manager.printProductDetails();
+        manager.deliverProduct(100, 5);
+        //Updated details of all products
+        manager.printAllProductDetails();
     }
     
     /**
@@ -57,7 +78,7 @@ public class StockDemo
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
      */
-    public void sellProduct(int id)
+    public void sellProduct(int id, int amount)
     {
         Product product = getProduct(id);
         
@@ -72,8 +93,6 @@ public class StockDemo
     /**
      * Get the product with the given id from the manager.
      * An error message is printed if there is no match.
-     * @param id The ID of the product.
-     * @return The Product, or null if no matching one is found.
      */
     public Product getProduct(int id)
     {

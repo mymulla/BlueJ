@@ -2,7 +2,8 @@
  * Model some details of a product sold by a company.
  * 
  * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * Modified by Muhammad Mulla
+ * @version Feb 2021
  */
 public class Product
 {
@@ -15,9 +16,7 @@ public class Product
 
     /**
      * Constructor for objects of class Product.
-     * The initial stock quantity is zero.
-     * @param id The product's identifying number.
-     * @param name The product's name.
+     * The initial product quantity is zero.
      */
     public Product(int id, String name)
     {
@@ -27,7 +26,7 @@ public class Product
     }
 
     /**
-     * @return The product's id.
+     * Return the product's id.
      */
     public int getID()
     {
@@ -35,15 +34,27 @@ public class Product
     }
 
     /**
-     * @return The product's name.
+     * Return the product's name.
      */
     public String getName()
     {
         return name;
     }
+    
+    /**
+     * This method is to rename a product
+     * 
+     * This is called in StockManager (renameProduct())
+     */
+    public void setName(String newName)
+    {
+        name = newName;
+    }
 
     /**
-     * @return The quantity in stock.
+     * Returns the quantity of items in stock.
+     * 
+     * Called many times in StockManager class.
      */
     public int getQuantity()
     {
@@ -51,35 +62,38 @@ public class Product
     }
 
     /**
-     * @return The id, name and quantity in stock.
+     * Returns the id, name and quantity in stock.
      */
     public String toString()
     {
-        return id + ": " +  name + " stock level: " + quantity;
+        return id + ": " +  name + ", Stock level: " + quantity;
     }
 
     /**
-     * Restock with the given amount of this product.
-     * The current quantity is incremented by the given amount.
-     * @param amount The number of new items added to the stock.
-     *               This must be greater than zero.
+     * This method restocks an item in the stocklist, and increases its quantity.
+     * 
+     * This method is called in StockManager (deliverProduct()), when a delivery of a product
+     * is received, which will increase its quantity.
+     * 
+     * Can only accept delivery and increase quantity if the "amount" is greater than 0, 
+     * otherwise, an error is printed.
      */
     public void increaseQuantity(int amount)
     {
-        if(amount > 0) 
+        if(amount <= 0) 
         {
-            quantity += amount;
+            System.out.println("Please input a positive number greater than 0");
         }
         else 
         {
-            System.out.println("Attempt to restock " + name +
-                               " with a non-positive amount: " + amount);
+            quantity += amount;
         }
     }
 
     /**
-     * Sell one of these products.
-     * An error is reported if there appears to be no stock.
+     * This method sells one product.
+     * 
+     * This method is used in a loop in the sellProduct() method in StockManager.
      */
     public void sellOne()
     {

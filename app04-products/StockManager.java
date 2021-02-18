@@ -1,70 +1,301 @@
 import java.util.ArrayList;
 
 /**
- * Manage the stock in a business.
- * The stock is described by zero or more Products.
+ * Manages the stock in a business.
+ * Handles adding, removing, renaming and removing products from the stocklist.
+ * Also accepts delivery of products, and handles selling products, searching for products by name
+ * and finding them by ID
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Also prints all products in the stocklist (ID, name, amount in stock),
+ * as well as printing products which are low in stock.
+ * 
+ * @author Muhammad Mulla 
+ * @version Feb 2021
  */
 public class StockManager
 {
     // A list of the products.
-    private ArrayList<Product> stock;
+    private ArrayList<Product> stocklist;
+
+    public boolean inStock;
 
     /**
-     * Initialise the stock manager.
+     * Constructor of class StockManager.
+     * Initialise the stock manager by creating an arraylist.
      */
     public StockManager()
     {
-        stock = new ArrayList<>();
+        stocklist = new ArrayList<>();
     }
 
     /**
      * Add a product to the list.
-     * @param item The item to be added.
+     * This can be (preloaded) from the stockDemo class, or can be 
+     * manually added using a product object.
      */
     public void addProduct(Product item)
     {
-        stock.add(item);
-    }
-    
-    /**
-     * Receive a delivery of a particular product.
-     * Increase the quantity of the product by the given amount.
-     * @param id The ID of the product.
-     * @param amount The amount to increase the quantity by.
-     */
-    public void delivery(int id, int amount)
-    {
-    }
-    
-    /**
-     * Try to find a product in the stock with the given id.
-     * @return The identified product, or null if there is none
-     *         with a matching ID.
-     */
-    public Product findProduct(int id)
-    {
-        return null;
-    }
-    
-    /**
-     * Locate a product with the given ID, and return how
-     * many of this item are in stock. If the ID does not
-     * match any product, return zero.
-     * @param id The ID of the product.
-     * @return The quantity of the given product in stock.
-     */
-    public int numberInStock(int id)
-    {
-        return 0;
+        stocklist.add(item);
+        System.out.println("Product: " + item + " has been been added to the stock");
     }
 
     /**
-     * Print details of all the products.
+     * This method removes an existing product from the stocklist,
+     * or prints an error if the product with a specified ID does not exist.
      */
-    public void printProductDetails()
+    public void removeProduct(int id)
     {
+        Product product = findProduct(id);
+        
+        if (product != null)
+        {
+            stocklist.remove(product);
+            System.out.println(product + " has been removed");
+            System.out.println("Updated product list:");
+            printAllProductDetails();
+        }
+
+        else 
+        {
+            System.out.println("This product does not exist");
+        }
+    }
+
+    /**
+     * This method renames an existing product from the stocklist with a new name,
+     * or prints an error if the product with a specified ID does not exist.
+     */
+    public void renameProduct(int id, String newName)
+    {
+        Product product = findProduct(id);
+        
+        if (product != null)
+        {
+            System.out.println("Name of product with id "
+                + id + " (" + product.getName() + ") has been renamed ");
+            product.setName(newName);
+            System.out.println("to " + newName);
+            System.out.println();
+            System.out.println("Updated product list:");
+            printAllProductDetails();
+        }
+        
+        else 
+        {
+            System.out.println("This product does not exist");
+        }
+    }
+    
+    /**
+     * This method models selling one product from the stocklist
+     * This will reduce the stock level by one.
+     * 
+     * It will also print an error if the product with a specified ID does not exist.
+     */
+    public void sellOneProduct(int id)
+    {
+        Product product = findProduct(id);
+
+        if (product != null)
+        {
+            System.out.println("Selling one of item: " + product);
+            
+            product.sellOne();
+
+            System.out.println("Updated stock level: " + product.getQuantity());
+        }
+
+        else 
+        {
+            System.out.println("This product does not exist");
+        }
+    }
+
+    /**
+     * This method models selling product(s) from the stocklist
+     * This will reduce the stock level according to how many items were purchased.
+     * 
+     * If the requested amount to sell is more than the amount in stock, a message will be printed
+     * and only the amount in stock will be sold.
+     * 
+     * It will also print an error if the product with a specified ID does not exist.
+     */
+    public void sellProduct(int id, int amount)
+    {
+        Product product = findProduct(id);
+
+        if (product != null)
+        {
+            if (amount > product.getQuantity())
+            {
+                amount = product.getQuantity();
+                System.out.println("Insufficient quantity requested, only " + amount + " available in stock-");
+                System.out.println("Selling " + amount + " of item: " + product);
+            }
+
+            else if (amount <= product.getQuantity())
+            {
+                System.out.println("Selling " + amount + " of item: " + product);
+            }
+
+            for (int loop = 0; loop < amount; loop++)
+            {
+                product.sellOne();
+            }
+
+            System.out.println("Updated stock level: " + product.getQuantity());
+        }
+
+        else 
+        {
+            System.out.println("This product does not exist");
+        }
+    }
+
+    /**
+     * This method recieves a delivery of a certain product from the stocklist, the amount can be specified.
+     * It will update the stock level (amount in stock), and print the updated product details.
+     */
+    public void deliverProduct(int id, int amount)
+    {
+        Product product = findProduct(id);
+        
+        //This will set the "inStock" variable to "true" if the amount in stock is more than 0
+        //To be used in other methods.
+        if ((product.getQuantity() > 0))
+        {
+            inStock = true;
+        }
+        else
+        {
+            inStock = false;
+        }
+
+        if (product != null)
+        {
+            System.out.println("A delivery of " + product.getName() + " has been received");
+            product.increaseQuantity(amount);
+            System.out.println("Restocked by " + amount);
+            System.out.println("Updated Product: " + product);
+        }
+
+        else 
+        {
+            System.out.println("This product does not exist");
+        }
+    }
+
+    /**
+     * This method will check if the specified product is in stock (stock level more than 0)
+     */
+    public void productInStock(int id)
+    {
+        Product product = findProduct(id);
+        
+        if ((product.getQuantity() > 0))
+        {
+            inStock = true;
+            System.out.println("This product is in stock");
+        }
+        else
+        {
+            inStock = false;
+            System.out.println("This product is currently not in stock");
+        }
+    }
+
+    /**
+     * This method will search for products in the stocklist by name and print them.
+     */
+    public void searchForProduct(String name)
+    {
+        int count = 0;
+
+        for (Product product : stocklist)
+        {
+            if (product.getName().contains(name))
+            {
+                System.out.println(product);
+                count++;
+            }
+        }
+
+        System.out.println("The search returned " + count + " results containing " + name + ".");
+    }
+
+    /**
+     * This method will search for and return a product by ID
+     * If the ID is not in the stocklist, it will print an error message stating that the
+     * product does not exist, and will return null.
+     */
+    public Product findProduct(int id)
+    {
+        int index = 0;
+        boolean inStock = false;
+        Product product = null;
+        while (!inStock && index < stocklist.size())
+        {
+            product = stocklist.get(index);
+            if (product.getID() == id)
+            {
+                inStock = true;
+            }
+            else index++;
+        }
+
+        if ((inStock = true) && (id -99 <= stocklist.size()))
+        {
+            System.out.println("Product " + product + " has been found");
+            return product;
+        }
+        else
+        {
+            System.out.println("Product not found- this product does not exist");
+            return null;
+        }
+    }
+
+    /**
+     * This method is called in the printAllProductDetails method below 
+     * and is the header which is printed before the stocklist
+     */
+    public void printHeading()
+    {
+        System.out.println();
+        System.out.println("M Mulla's Phone Stock List");
+        System.out.println("**************************");
+        System.out.println();
+    }
+
+    /**
+     * This method will print the details of all the products-
+     * The Name, ID and stock level (amount in stock)
+     */
+    public void printAllProductDetails()
+    {
+        printHeading();
+        
+        //Prints details of each product in the stocklist 
+        for(Product product : stocklist)
+        {
+            System.out.println(product);
+        }
+    }
+
+    /**
+     * This method will print the details of all those products in the stocklist which
+     * are low in stock or have ran out- if they have a stock level of less than 5 (less than 5 in stock)
+     */
+    public void printLowStockProducts()
+    {
+        System.out.println("These are the products which are low in stock (less than 5 available):");
+        
+        for(Product product : stocklist)
+        {
+            if (product.getQuantity()< 5)
+            {
+                System.out.println(product);
+            }
+        }
     }
 }
