@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Program here.
+ * The program class creates a new application called StockApp and runs it
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Muhammad Mulla
+ * @version Feb 2021
  */
 public class Program
 {

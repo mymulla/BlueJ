@@ -1,0 +1,731 @@
+Program.main();
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> quit
+Program.main();
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> add
+You have selected the option to add a new product
+
+Please enter the ID
+> 100
+
+
+Please enter the product name 
+
+> Samsung Galaxy S20
+Product: 100: Samsung Galaxy S20, Stock level: 0 has been been added to the stock
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> add
+You have selected the option to add a new product
+
+Please enter the ID
+> 101
+
+
+Please enter the product name 
+
+> Samsung Galaxy S10
+Product: 101: Samsung Galaxy S10, Stock level: 0 has been been added to the stock
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> add
+You have selected the option to add a new product
+
+Please enter the ID
+> 102
+
+
+Please enter the product name 
+
+> Samsung Galaxy S9
+Product: 102: Samsung Galaxy S9, Stock level: 0 has been been added to the stock
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> add
+You have selected the option to add a new product
+
+Please enter the ID
+> 103
+
+
+Please enter the product name 
+
+> Samsung Galaxy S8
+Product: 103: Samsung Galaxy S8, Stock level: 0 has been been added to the stock
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> add
+You have selected the option to add a new product
+
+Please enter the ID
+> 104
+
+
+Please enter the product name 
+
+> iPhone X
+Product: 104: iPhone X, Stock level: 0 has been been added to the stock
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> add
+You have selected the option to add a new product
+
+Please enter the ID
+> 105
+
+
+Please enter the product name 
+
+> iPhone 9
+Product: 105: iPhone 9, Stock level: 0 has been been added to the stock
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> add
+You have selected the option to add a new product
+
+Please enter the ID
+> 106
+
+
+Please enter the product name 
+
+> iPhone 8
+Product: 106: iPhone 8, Stock level: 0 has been been added to the stock
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> add
+You have selected the option to add a new product
+
+Please enter the ID
+> 107
+
+
+Please enter the product name 
+
+> Google Pixel 4a
+Product: 107: Google Pixel 4a, Stock level: 0 has been been added to the stock
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> add
+You have selected the option to add a new product
+
+Please enter the ID
+> 108
+
+
+Please enter the product name 
+
+> Google Pixel 5
+Product: 108: Google Pixel 5, Stock level: 0 has been been added to the stock
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> add
+You have selected the option to add a new product
+
+Please enter the ID
+> 109
+
+
+Please enter the product name 
+
+> OnePlus 5G
+Product: 109: OnePlus 5G, Stock level: 0 has been been added to the stock
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> add
+You have selected the option to add a new product
+
+Please enter the ID
+> 100
+Duplicate ID detected, please select add and enter a valid ID
+
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> add
+You have selected the option to add a new product
+
+Please enter the ID
+> 110
+
+
+Please enter the product name 
+
+> 
+Blank name detected, please enter a valid ID and name
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> printall
+
+M Mulla's Phone Stock List
+**************************
+
+100: Samsung Galaxy S20, Stock level: 0
+101: Samsung Galaxy S10, Stock level: 0
+102: Samsung Galaxy S9, Stock level: 0
+103: Samsung Galaxy S8, Stock level: 0
+104: iPhone X, Stock level: 0
+105: iPhone 9, Stock level: 0
+106: iPhone 8, Stock level: 0
+107: Google Pixel 4a, Stock level: 0
+108: Google Pixel 5, Stock level: 0
+109: OnePlus 5G, Stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> remove
+You have selected the option to remove a product
+
+Please enter the product id 
+> 107
+Product 107: Google Pixel 4a, Stock level: 0 has been found
+107: Google Pixel 4a, Stock level: 0 has been removed
+Updated product list:
+
+M Mulla's Phone Stock List
+**************************
+
+100: Samsung Galaxy S20, Stock level: 0
+101: Samsung Galaxy S10, Stock level: 0
+102: Samsung Galaxy S9, Stock level: 0
+103: Samsung Galaxy S8, Stock level: 0
+104: iPhone X, Stock level: 0
+105: iPhone 9, Stock level: 0
+106: iPhone 8, Stock level: 0
+108: Google Pixel 5, Stock level: 0
+109: OnePlus 5G, Stock level: 0
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> remove
+You have selected the option to remove a product
+
+Please enter the product id 
+> 110
+Invalid ID!
+Product not found- this product does not exist
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> deliver
+You have selected the option to deliver a product to stock (restock an item)
+
+Please enter the product id 
+> 100
+Please enter the amount you would like to deliver 
+> 20
+Product 100: Samsung Galaxy S20, Stock level: 0 has been found
+A delivery of Samsung Galaxy S20 has been received
+Restocked by 20
+Updated Product: 100: Samsung Galaxy S20, Stock level: 20
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> deliver
+You have selected the option to deliver a product to stock (restock an item)
+
+Please enter the product id 
+> 101
+Please enter the amount you would like to deliver 
+> 20
+Product 101: Samsung Galaxy S10, Stock level: 0 has been found
+A delivery of Samsung Galaxy S10 has been received
+Restocked by 20
+Updated Product: 101: Samsung Galaxy S10, Stock level: 20
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> deliver
+You have selected the option to deliver a product to stock (restock an item)
+
+Please enter the product id 
+> 102
+Please enter the amount you would like to deliver 
+> 20
+Product 102: Samsung Galaxy S9, Stock level: 0 has been found
+A delivery of Samsung Galaxy S9 has been received
+Restocked by 20
+Updated Product: 102: Samsung Galaxy S9, Stock level: 20
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> deliver
+You have selected the option to deliver a product to stock (restock an item)
+
+Please enter the product id 
+> 100
+Please enter the amount you would like to deliver 
+> -20
+Please input a positive quantity to deliver
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> sell
+You have selected the option to sell an amount of a product
+
+Please enter the product id 
+> 100
+Please enter the amount you would like to sell 
+> 18
+Product 100: Samsung Galaxy S20, Stock level: 20 has been found
+Selling 18 of item: 100: Samsung Galaxy S20, Stock level: 20
+Updated stock level: 2
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> sell
+You have selected the option to sell an amount of a product
+
+Please enter the product id 
+> 101
+Please enter the amount you would like to sell 
+> 17
+Product 101: Samsung Galaxy S10, Stock level: 20 has been found
+Selling 17 of item: 101: Samsung Galaxy S10, Stock level: 20
+Updated stock level: 3
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> sell
+You have selected the option to sell an amount of a product
+
+Please enter the product id 
+> 102
+Please enter the amount you would like to sell 
+> 16
+Product 102: Samsung Galaxy S9, Stock level: 20 has been found
+Selling 16 of item: 102: Samsung Galaxy S9, Stock level: 20
+Updated stock level: 4
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> sell
+You have selected the option to sell an amount of a product
+
+Please enter the product id 
+> 100
+Please enter the amount you would like to sell 
+> -10
+Please input a positive quantity to sell
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> search
+You have selected the option to search for a product by name
+
+Please type the product you wish to search for
+> Samsung
+100: Samsung Galaxy S20, Stock level: 2
+101: Samsung Galaxy S10, Stock level: 3
+102: Samsung Galaxy S9, Stock level: 4
+103: Samsung Galaxy S8, Stock level: 0
+The search returned 4 results containing samsung.
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> search
+You have selected the option to search for a product by name
+
+Please type the product you wish to search for
+> sAmSuNg
+100: Samsung Galaxy S20, Stock level: 2
+101: Samsung Galaxy S10, Stock level: 3
+102: Samsung Galaxy S9, Stock level: 4
+103: Samsung Galaxy S8, Stock level: 0
+The search returned 4 results containing samsung.
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> printlowstock
+These are the products which are low in stock (Only 1-5 in stock):
+100: Samsung Galaxy S20, Stock level: 2
+101: Samsung Galaxy S10, Stock level: 3
+102: Samsung Galaxy S9, Stock level: 4
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> restock
+Product 100: Samsung Galaxy S20, Stock level: 2 has been found
+A delivery of Samsung Galaxy S20 has been received
+Restocked by 8
+Updated Product: 100: Samsung Galaxy S20, Stock level: 10
+Product 101: Samsung Galaxy S10, Stock level: 3 has been found
+A delivery of Samsung Galaxy S10 has been received
+Restocked by 7
+Updated Product: 101: Samsung Galaxy S10, Stock level: 10
+Product 102: Samsung Galaxy S9, Stock level: 4 has been found
+A delivery of Samsung Galaxy S9 has been received
+Restocked by 6
+Updated Product: 102: Samsung Galaxy S9, Stock level: 10
+
+All low stock products have been restocked to 10
+Updated stock level for those products: 10
+
+******************************
+ Stock Management Application 
+    App05: by Muhammad Mulla
+******************************
+
+    Add:            Add a new product
+    Remove:         Remove an old product
+    PrintAll:       Print all products
+    PrintLowStock:  Print products which are low in stock
+    Restock:        Restock all low stock items to 10
+    Deliver:        Deliver an amount of a product to stock
+    Sell:           Sell an amount of a product
+    Search:         Search for a product by name
+    Quit:           Quit the program
+
+> 
