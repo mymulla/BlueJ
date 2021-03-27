@@ -1,14 +1,18 @@
 import java.util.HashMap;
 
 /**
- * This class is part of the "World of Zuul" application. 
- * "World of Zuul" is a very simple, text based adventure game.
+ * This class is part of the "Hack-o-Mania" application. 
+ * "Hack-o-Mania" is a very simple, text based adventure game,
+ * which is a re-developed version of the classic adventure game, World of Zuul.
  * 
  * This class holds an enumeration of all command words known to the game.
  * It is used to recognise commands as they are typed in.
  *
  * @author  Michael Kölling and David J. Barnes
  * @version 2016.02.29
+ * 
+ * Modified by Muhammad Mulla
+ * Version March 2021
  */
 
 public class CommandWords

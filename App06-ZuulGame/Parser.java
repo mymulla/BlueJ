@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
 /**
- * This class is part of the "World of Zuul" application. 
- * "World of Zuul" is a very simple, text based adventure game.  
+ * This class is part of the "Hack-o-Mania" application. 
+ * "Hack-o-Mania" is a very simple, text based adventure game,
+ * which is a re-developed version of the classic adventure game, World of Zuul. 
  * 
  * This parser reads user input and tries to interpret it as an "Adventure"
  * command. Every time it is called it reads a line from the terminal and
@@ -15,6 +16,9 @@ import java.util.Scanner;
  * 
  * @author  Michael Kölling and David J. Barnes
  * @version 2016.02.29
+ * 
+ * Modified by Muhammad Mulla
+ * Version 2021
  */
 public class Parser 
 {
