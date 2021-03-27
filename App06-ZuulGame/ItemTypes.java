@@ -1,9 +1,14 @@
 
 /**
- * Enumeration class ItemTypes - write a description of the enum class here
+ * This class is part of the "Hack-o-Mania" application. 
+ * "Hack-o-Mania" is a very simple, text based adventure game,
+ * which is a re-developed version of the classic adventure game, World of Zuul. 
+ * 
+ * Enumeration class ItemTypes - This class defines the items
+ * a player can carry.
  *
- * @author (your name here)
- * @version (version number or date here)
+ * @author Muhammad Mulla
+ * @version March 2021
  */
 public enum ItemTypes
 {
@@ -11,13 +16,9 @@ public enum ItemTypes
 
     KEY("keys"), 
 
-    MONEY("money"), 
-
     BADGE("badge"), 
 
     UNIFORM("uniform"),
-    
-    USB("usb"),
     
     FILES("files");
 
