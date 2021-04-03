@@ -1,0 +1,798 @@
+Program.main("John Smith");
+
+Welcome to Hack-o-mania John Smith!
+This game is a new, re-developed edition of the adventure game, World of Zuul.
+
+You have been assigned a mission to break into this secure facility, 
+break into the secured server room and steal the confidential files! 
+You must locate the server room, try to get in and hack the PC without getting caught...
+Don't wander around too much and lose energy, or you'll get caught!
+
+How to play: 
+Type 'go north' to go forward.
+Type 'go east' to go right.
+Type 'go south' to go back.
+Type 'go west' to go left.
+Type 'inventory' to see what items you are carrying.
+Type commands such as 'get' to get and use the items.
+Type 'help' if you need help.
+
+Good luck on your mission!
+
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+
+ ----------------------------------------------
+ | John Smith: | Move 0 | Energy = 100 | Score = 0 |
+ ----------------------------------------------
+
+> go north
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 1 | Energy = 97 | Score = 0 |
+ ----------------------------------------------
+
+> go east
+ You are in the security room, there are CCTV screens all around. A security guard is seated, asleep, his keys are on the desk
+ You notice a small wall-mounted safe.
+
+
+ Exits: east west
+
+ ----------------------------------------------
+ | John Smith: | Move 2 | Energy = 94 | Score = 0 |
+ ----------------------------------------------
+
+> go east
+The safe is locked! You need a key
+
+ ----------------------------------------------
+ | John Smith: | Move 2 | Energy = 94 | Score = 0 |
+ ----------------------------------------------
+
+> get key
+You have taken the key from the guard!
+
+ ----------------------------------------------
+ | John Smith: | Move 2 | Energy = 91 | Score = 20 |
+ ----------------------------------------------
+
+> unlock safe
+You have unlocked the safe! Type 'go east' to discover what's in the safe...
+
+ ----------------------------------------------
+ | John Smith: | Move 2 | Energy = 88 | Score = 30 |
+ ----------------------------------------------
+
+> go east
+ You are looking inside the opened safe. 
+ In the safe, you see just one access badge....
+
+
+ Exits: west
+
+ ----------------------------------------------
+ | John Smith: | Move 3 | Energy = 85 | Score = 30 |
+ ----------------------------------------------
+
+> go
+Go where?
+
+ ----------------------------------------------
+ | John Smith: | Move 3 | Energy = 85 | Score = 30 |
+ ----------------------------------------------
+
+> get badge
+You have taken the badge from the safe!
+
+ ----------------------------------------------
+ | John Smith: | Move 3 | Energy = 82 | Score = 50 |
+ ----------------------------------------------
+
+> inventory
+
+ You are carrying: keys, badge
+
+
+ ----------------------------------------------
+ | John Smith: | Move 3 | Energy = 82 | Score = 50 |
+ ----------------------------------------------
+
+> go west
+ You are in the security room, there are CCTV screens all around. A security guard is seated, asleep, his keys are on the desk
+ You notice a small wall-mounted safe.
+
+
+ Exits: east west
+
+ ----------------------------------------------
+ | John Smith: | Move 4 | Energy = 79 | Score = 50 |
+ ----------------------------------------------
+
+> go west
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 5 | Energy = 76 | Score = 50 |
+ ----------------------------------------------
+
+> go west
+ You are inside the laboratory which is currently empty. 
+ You see a door ahead, which says 'Authorised Personnel Only'.
+
+ Exits: east north
+
+ ----------------------------------------------
+ | John Smith: | Move 6 | Energy = 73 | Score = 50 |
+ ----------------------------------------------
+
+> go north
+ You are in the storage room, which is full of a load of rubbish, 
+ though you see some guard's uniforms... .
+
+
+ Exits: south
+
+ ----------------------------------------------
+ | John Smith: | Move 7 | Energy = 70 | Score = 50 |
+ ----------------------------------------------
+
+> get uniform
+You have taken the guard's uniform from the storage room!
+You put on this uniform...
+
+ ----------------------------------------------
+ | John Smith: | Move 7 | Energy = 67 | Score = 70 |
+ ----------------------------------------------
+
+> go south
+ You are inside the laboratory which is currently empty. 
+ You see a door ahead, which says 'Authorised Personnel Only'.
+
+ Exits: east north
+
+ ----------------------------------------------
+ | John Smith: | Move 8 | Energy = 64 | Score = 70 |
+ ----------------------------------------------
+
+> go east
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 9 | Energy = 61 | Score = 70 |
+ ----------------------------------------------
+
+> afjiasf
+I don't know what you mean...
+
+ ----------------------------------------------
+ | John Smith: | Move 9 | Energy = 61 | Score = 70 |
+ ----------------------------------------------
+
+> help
+You need to get into the server room...
+Use your common sense before you get caught!
+
+Your command words are:
+help  hack  unlock  swipe  get  go  quit  inventory  
+
+ ----------------------------------------------
+ | John Smith: | Move 9 | Energy = 61 | Score = 70 |
+ ----------------------------------------------
+
+> go north
+ You are in the cafe. A few people are sat sipping away.  
+ You notice a door to your right.  
+ In red writing- Authorised Personnel Only.
+
+ Exits: east south
+
+ ----------------------------------------------
+ | John Smith: | Move 10 | Energy = 58 | Score = 70 |
+ ----------------------------------------------
+
+> go east
+The server room is locked!
+You need an access badge to get in!
+If you have a badge, type 'swipe' to unlock
+
+ ----------------------------------------------
+ | John Smith: | Move 10 | Energy = 58 | Score = 70 |
+ ----------------------------------------------
+
+> swipe badge
+You have unlocked the server room! Type 'go east' to enter the room...
+
+ ----------------------------------------------
+ | John Smith: | Move 10 | Energy = 55 | Score = 80 |
+ ----------------------------------------------
+
+> go east
+ You are in the server room, the main PC is here. Type 'hack' to steal the files and complete the mission.
+
+ Exits: west
+
+ ----------------------------------------------
+ | John Smith: | Move 11 | Energy = 52 | Score = 80 |
+ ----------------------------------------------
+
+> hack PC
+
+ ----------------------------------------------
+ | John Smith: | Move 11 | Energy = 49 | Score = 100 |
+ ----------------------------------------------
+
+You have successfully hacked the main PC and stole the files!
+
+Congratulations! You have completed the game successfully!
+Just don't try this in real life!
+Thank you for playing!
+
+
+
+
+
+Program.main("John Smith");
+
+Welcome to Hack-o-mania John Smith!
+This game is a new, re-developed edition of the adventure game, World of Zuul.
+
+You have been assigned a mission to break into this secure facility, 
+break into the secured server room and steal the confidential files! 
+You must locate the server room, try to get in and hack the PC without getting caught...
+Don't wander around too much and lose energy, or you'll get caught!
+
+How to play: 
+Type 'go north' to go forward.
+Type 'go east' to go right.
+Type 'go south' to go back.
+Type 'go west' to go left.
+Type 'inventory' to see what items you are carrying.
+Type commands such as 'get' to get and use the items.
+Type 'help' if you need help.
+
+Good luck on your mission!
+
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+
+ ----------------------------------------------
+ | John Smith: | Move 0 | Energy = 100 | Score = 0 |
+ ----------------------------------------------
+
+> quit
+Thank you for playing!
+
+
+
+
+Program.main("John Smith");
+
+Welcome to Hack-o-mania John Smith!
+This game is a new, re-developed edition of the adventure game, World of Zuul.
+
+You have been assigned a mission to break into this secure facility, 
+break into the secured server room and steal the confidential files! 
+You must locate the server room, try to get in and hack the PC without getting caught...
+Don't wander around too much and lose energy, or you'll get caught!
+
+How to play: 
+Type 'go north' to go forward.
+Type 'go east' to go right.
+Type 'go south' to go back.
+Type 'go west' to go left.
+Type 'inventory' to see what items you are carrying.
+Type commands such as 'get' to get and use the items.
+Type 'help' if you need help.
+
+Good luck on your mission!
+
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+
+ ----------------------------------------------
+ | John Smith: | Move 0 | Energy = 100 | Score = 0 |
+ ----------------------------------------------
+
+> go north
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 1 | Energy = 97 | Score = 0 |
+ ----------------------------------------------
+
+> go east
+ You are in the security room, there are CCTV screens all around. A security guard is seated, asleep, his keys are on the desk
+ You notice a small wall-mounted safe.
+
+
+ Exits: east west
+
+ ----------------------------------------------
+ | John Smith: | Move 2 | Energy = 94 | Score = 0 |
+ ----------------------------------------------
+
+> go east
+The safe is locked! You need a key
+
+ ----------------------------------------------
+ | John Smith: | Move 2 | Energy = 94 | Score = 0 |
+ ----------------------------------------------
+
+> get key
+You have taken the key from the guard!
+
+ ----------------------------------------------
+ | John Smith: | Move 2 | Energy = 91 | Score = 20 |
+ ----------------------------------------------
+
+> unlock
+You have unlocked the safe! Type 'go east' to discover what's in the safe...
+
+ ----------------------------------------------
+ | John Smith: | Move 2 | Energy = 88 | Score = 30 |
+ ----------------------------------------------
+
+> go east
+ You are looking inside the opened safe. 
+ In the safe, you see just one access badge....
+
+
+ Exits: west
+
+ ----------------------------------------------
+ | John Smith: | Move 3 | Energy = 85 | Score = 30 |
+ ----------------------------------------------
+
+> get badge
+You have taken the badge from the safe!
+
+ ----------------------------------------------
+ | John Smith: | Move 3 | Energy = 82 | Score = 50 |
+ ----------------------------------------------
+
+> go west
+ You are in the security room, there are CCTV screens all around. A security guard is seated, asleep, his keys are on the desk
+ You notice a small wall-mounted safe.
+
+
+ Exits: east west
+
+ ----------------------------------------------
+ | John Smith: | Move 4 | Energy = 79 | Score = 50 |
+ ----------------------------------------------
+
+> go west
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 5 | Energy = 76 | Score = 50 |
+ ----------------------------------------------
+
+> go north
+ You are in the cafe. A few people are sat sipping away.  
+ You notice a door to your right.  
+ In red writing- Authorised Personnel Only.
+
+ Exits: east south
+
+ ----------------------------------------------
+ | John Smith: | Move 6 | Energy = 73 | Score = 50 |
+ ----------------------------------------------
+
+> go east
+The server room is locked!
+You need an access badge to get in!
+If you have a badge, type 'swipe' to unlock
+
+ ----------------------------------------------
+ | John Smith: | Move 6 | Energy = 73 | Score = 50 |
+ ----------------------------------------------
+
+> swipe
+You have unlocked the server room! Type 'go east' to enter the room...
+
+ ----------------------------------------------
+ | John Smith: | Move 6 | Energy = 70 | Score = 60 |
+ ----------------------------------------------
+
+> go east
+You have been caught! One of the customers in the cafe got suspicious as you were wearing casual clothes and they reported you...
+You will have to restart the game and try again. Better luck next time!
+Better luck next time!
+Thank you for playing!
+
+
+
+
+Program.main("John Smith");
+
+Welcome to Hack-o-mania John Smith!
+This game is a new, re-developed edition of the adventure game, World of Zuul.
+
+You have been assigned a mission to break into this secure facility, 
+break into the secured server room and steal the confidential files! 
+You must locate the server room, try to get in and hack the PC without getting caught...
+Don't wander around too much and lose energy, or you'll get caught!
+
+How to play: 
+Type 'go north' to go forward.
+Type 'go east' to go right.
+Type 'go south' to go back.
+Type 'go west' to go left.
+Type 'inventory' to see what items you are carrying.
+Type commands such as 'get' to get and use the items.
+Type 'help' if you need help.
+
+Good luck on your mission!
+
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+
+ ----------------------------------------------
+ | John Smith: | Move 0 | Energy = 100 | Score = 0 |
+ ----------------------------------------------
+
+> go north
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 1 | Energy = 97 | Score = 0 |
+ ----------------------------------------------
+
+> go south
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+
+ ----------------------------------------------
+ | John Smith: | Move 2 | Energy = 94 | Score = 0 |
+ ----------------------------------------------
+
+> go north
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 3 | Energy = 91 | Score = 0 |
+ ----------------------------------------------
+
+> go south
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+
+ ----------------------------------------------
+ | John Smith: | Move 4 | Energy = 88 | Score = 0 |
+ ----------------------------------------------
+
+> go north
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 5 | Energy = 85 | Score = 0 |
+ ----------------------------------------------
+
+> go south
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+
+ ----------------------------------------------
+ | John Smith: | Move 6 | Energy = 82 | Score = 0 |
+ ----------------------------------------------
+
+> go north
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 7 | Energy = 79 | Score = 0 |
+ ----------------------------------------------
+
+> go south
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+
+ ----------------------------------------------
+ | John Smith: | Move 8 | Energy = 76 | Score = 0 |
+ ----------------------------------------------
+
+> go north
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 9 | Energy = 73 | Score = 0 |
+ ----------------------------------------------
+
+> go south
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+
+ ----------------------------------------------
+ | John Smith: | Move 10 | Energy = 70 | Score = 0 |
+ ----------------------------------------------
+
+> go north
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 11 | Energy = 67 | Score = 0 |
+ ----------------------------------------------
+
+> go south
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+
+ ----------------------------------------------
+ | John Smith: | Move 12 | Energy = 64 | Score = 0 |
+ ----------------------------------------------
+
+> go north
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 13 | Energy = 61 | Score = 0 |
+ ----------------------------------------------
+
+> go south
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+
+ ----------------------------------------------
+ | John Smith: | Move 14 | Energy = 58 | Score = 0 |
+ ----------------------------------------------
+
+> go north
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 15 | Energy = 55 | Score = 0 |
+ ----------------------------------------------
+
+> go south
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+
+ ----------------------------------------------
+ | John Smith: | Move 16 | Energy = 52 | Score = 0 |
+ ----------------------------------------------
+
+> go north
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 17 | Energy = 49 | Score = 0 |
+ ----------------------------------------------
+
+> go south
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+
+ ----------------------------------------------
+ | John Smith: | Move 18 | Energy = 46 | Score = 0 |
+ ----------------------------------------------
+
+> go north
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 19 | Energy = 43 | Score = 0 |
+ ----------------------------------------------
+
+> go south
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+
+ ----------------------------------------------
+ | John Smith: | Move 20 | Energy = 40 | Score = 0 |
+ ----------------------------------------------
+
+> go north
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 21 | Energy = 37 | Score = 0 |
+ ----------------------------------------------
+
+> go south
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+
+ ----------------------------------------------
+ | John Smith: | Move 22 | Energy = 34 | Score = 0 |
+ ----------------------------------------------
+
+> go north
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 23 | Energy = 31 | Score = 0 |
+ ----------------------------------------------
+
+> go south
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+
+ ----------------------------------------------
+ | John Smith: | Move 24 | Energy = 28 | Score = 0 |
+ ----------------------------------------------
+
+> go north
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 25 | Energy = 25 | Score = 0 |
+ ----------------------------------------------
+
+> go south
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+
+ ----------------------------------------------
+ | John Smith: | Move 26 | Energy = 22 | Score = 0 |
+ ----------------------------------------------
+
+> go north
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 27 | Energy = 19 | Score = 0 |
+ ----------------------------------------------
+
+> go south
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+
+ ----------------------------------------------
+ | John Smith: | Move 28 | Energy = 16 | Score = 0 |
+ ----------------------------------------------
+
+> go north
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 29 | Energy = 13 | Score = 0 |
+ ----------------------------------------------
+
+> go south
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+
+ ----------------------------------------------
+ | John Smith: | Move 30 | Energy = 10 | Score = 0 |
+ ----------------------------------------------
+
+> go north
+ You are in the building, in the main lobby.
+ The receptionist is in the far left corner on the phone.
+ You see four rooms- one in each direction....
+
+ Exits: east south north west
+
+ ----------------------------------------------
+ | John Smith: | Move 31 | Energy = 7 | Score = 0 |
+ ----------------------------------------------
+
+> go south
+ You are outside the main entrance of the facility.
+ Your target is the main PC in the server room..
+
+ Exits: north
+You have been caught! You wandered around too much and lost too much energy!
+Better luck next time!
+Thank you for playing!
